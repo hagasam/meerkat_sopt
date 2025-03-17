@@ -1,0 +1,27 @@
+bayesopt:
+    coeffA: [-10, 50]
+    coeffB1: [-10, 50]
+    coeffB2: [-10, 50]
+    coeffNone: [-10, 50]
+    acquisition_type: 'EI'
+    acquisition_weight: 0.1
+    maximize: False
+    max_iter: 100
+geneticalgo:
+    params:
+      max_num_iteration: 10 
+      population_size: 60
+      mutation_probability: 0.1
+      elit_ratio: 0.01
+      crossover_probability: 0.5
+      parents_portion: 0.3
+      crossover_type: 'uniform'
+    varabound: [-10,50]
+    function_timeout: 60
+    num_dimension: 4
+plan:
+    short: 72
+    long: 4320 
+pulsar: '/Users/Sam-Macbook/work/csv_opt/ObsList1713255806862.csv'
+imaging: '/Users/Sam-Macbook/work/csv_opt/ObsList1713255786171.csv' 
+dashboard: '/Users/Sam-Macbook/work/dashboard-20240227151314.csv'
